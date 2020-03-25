@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+}
+.container {
+  padding: 30px;
+  background-color: rgb(146, 214, 197);
+  margin-top: 20px;
+}
+
+/* Style the search field */
+form.searchForm input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.searchForm button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.searchForm button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.searchForm::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#movies img,
+#movie img {
+  width: 100%;
+}
+
+#movies .col-md-3 .well {
+  height: 390px;
+}
+#movies .col-md-3 img {
+  height: 240px;
+}
+@media (min-width: 960px) {
+  #movies .col-md-3 .well {
+    height: 390px;
+  }
+}
+.list-group-item {
+  background-color: rgba(0, 225, 255, 0.767);
+}
